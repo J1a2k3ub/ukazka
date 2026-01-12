@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Líčení a nehtový design | Studio COOL</title>
+  <meta name="description" content="Líčení na denní i svatební příležitosti a nehty – nabídka služeb, ceník a fotogalerie.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/ico/ico.png">
+</head>
+<body>
+  <div class="bg-blur" aria-hidden="true"></div>
+
+<header>
+  <div class="nav-container">
+    <div class="hamburger-wrapper">
+      <div class="hamburger" id="hamburger">
+        <div></div><div></div><div></div>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Vítejte</a></li>
+        <li><a href="kosmetika.html">Kosmetika</a></li>
+        <li><a href="rasy.html">Řasy &amp; obočí</a></li>
+        <li><a href="kadernictvi.html">Kadeřnictví</a></li>
+        <li><a href="liceniAnehty.html" class="active">Líčení a nehtový design</a></li>
+        <li><a href="masaze.html">Masáže</a></li>
+        <li><a href="kontakty.html">Kontakty</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="nav-backdrop" id="navBackdrop"></div>
+</header>
+
+<main id="main">
+  <section class="hero fade-in">
+    <div class="hero-content">
+      <h1>Líčení a nehtový design</h1>
+      <p>Líčení na denní nošení, společenské akce i svatby. Nehty upravené do posledního detailu.</p>
+    </div>
+  </section>
+
+  <section class="service-cards fade-in">
+    <div class="service-card">
+      <div class="service-text">
+        <h3>Poskytované služby</h3>
+        <p>Zaměřuji se na přirozený, udržitelný vzhled a dlouhou výdrž. Poradím s výběrem stylu i domácí péče.</p>
+        <ul>
+          <li>Líčení na denní nošení</li>
+          <li>Společenské a svatební líčení</li>
+          <li>Nehty / nehtový design</li>
+          <li>Gel lak nehtová modeláž</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="cenik-button-container fade-in">
+    <button id="show-cenik-btn">Zobrazit ceník</button>
+  </div>
+
+  <section id="cenik-section" class="service-cards fade-in">
+    <div class="service-detail-card">
+      <div class="service-detail-text">
+        <h3>Líčení</h3>
+        <p>Líčení na denní nošení, společenské akce i svatby.</p>
+        <div class="price-tag">800–1500 Kč</div>
+      </div>
+    </div>
+
+    <div class="service-detail-card">
+      <div class="service-detail-text">
+        <h3>Nehty</h3>
+         <ul>
+            <li>Gel lak: <strong>550 Kč</strong></li>
+            <li>Modeláž: <strong>650 Kč</strong></li>
+          </ul>
+          <div class="price-tag">od 550 Kč</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section fade-in">
+    <h2>Galerie líčení &amp; nehtů</h2>
+    <div class="gallery-container" id="liceniGallery">
+      <img src="img/galerieNehty/hair9.jpg"  alt="">
+      <img src="img/galerieNehty/hair6.jpg" alt="">
+      <img src="img/galerieNehty/hair13.jpg"  alt="">
+      <img src="img/galerieNehty/5.jpg"  alt="">
+      <img src="img/galerieNehty/3.jpg" loading="lazy" alt="">
+      <img src="img/galerieNehty/7.jpg" loading="lazy" alt="">
+      <img src="img/galerieNehty/8.jpg" loading="lazy" alt="">
+    </div>
+  </section>
+</main>
+
+<footer>
+    <div class="footer-blur fade-in">
+      <p>© <span id="rok"></span> Kosmetika a Kadeřnictví</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("rok").textContent = new Date().getFullYear();
+</script>
+
+<script src="js/script.js"></script>
+<script>initGallery('liceniGallery');</script>
+</body>
+</html>
